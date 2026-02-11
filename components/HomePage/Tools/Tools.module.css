@@ -1,0 +1,39 @@
+.paper {
+  border-radius: 15px;
+
+  color: #ffffff;
+
+  background: rgba(87, 0, 95, 0.2);
+
+  border: 1px solid rgba(1, 81, 134, 0.692);
+
+  padding: 8px 18px;
+
+  box-shadow: 0 0 8px rgba(87, 0, 95, 0.521);
+
+  transition: all 0.3s ease;
+
+  backdrop-filter: blur(4px);
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🔥 Hover Effect */
+.paper:hover {
+  background: rgba(87, 0, 95, 0.4);
+
+  box-shadow:
+    0 0 12px rgba(87, 0, 95, 0.7),
+    0 0 22px rgba(1, 81, 134, 0.8),
+    0 0 32px rgba(87, 0, 95, 0.479);
+
+  transform: translateY(-4px) scale(1.02);
+}
+
+/* ✨ Icon Effect */
+.paper:hover svg {
+  filter: drop-shadow(0 0 10px rgba(1, 81, 134, 1));
+  transform: scale(1.15);
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,184 @@
+.footer {
+  margin-top: rem(20px);
+  padding-bottom: rem(50px);
+  padding-top: 10px;
+  /* border-top: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5)); */
+}
+
+.inner {
+  @media (max-width: $mantine-breakpoint-sm) {
+    flex-direction: column;
+  }
+}
+
+.links {
+  @media (max-width: $mantine-breakpoint-sm) {
+    margin-top: var(--mantine-spacing-lg);
+    margin-bottom: var(--mantine-spacing-sm);
+  }
+}
+
+.footerimg {
+  width: 100px;
+  height: 100px;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.link {
+  display: block;
+  line-height: 1;
+  padding: rem(8px) rem(12px);
+  border-radius: var(--mantine-radius-md);
+
+  text-decoration: none;
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
+  font-size: var(--mantine-font-size-sm);
+  font-weight: 500;
+
+  @mixin hover {
+    /* background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6)); */
+    /* background-color: var(--mantine-color-Primary_color-light); */
+    color: var(--mantine-color-Primary_color-light-color);
+  }
+
+  @media (max-width: $mantine-breakpoint-md) {
+    font-size: 10px;
+  }
+}
+
+.paper {
+  box-shadow: inset 0px -1px 2px rgba(255, 255, 255, 0.12),
+    inset 0px 0.6px 0px rgba(255, 255, 255, 0.1),
+    inset 0px 1.2px 0px rgba(255, 255, 255, 0.1),
+    inset -1.2px 0px 0px rgba(255, 255, 255, 0.04),
+    inset 1.2px 0px 0px rgba(255, 255, 255, 0.04);
+  background: radial-gradient(
+    113.04% 100% at 50% 0%,
+    #111 0%,
+    #141414 0.01%,
+    rgba(7, 7, 7, 0.12) 100%
+  );
+}
+
+.papera {
+  box-shadow: inset 0px -1px 2px rgba(255, 255, 255, 0.12),
+    inset 0px 0.6px 0px rgba(255, 255, 255, 0.1),
+    inset 0px 1.2px 0px rgba(255, 255, 255, 0.1),
+    inset -1.2px 0px 0px rgba(255, 255, 255, 0.04),
+    inset 1.2px 0px 0px rgba(255, 255, 255, 0.04);
+  background: radial-gradient(
+    113.04% 100% at 50% 0%,
+    #111 0%,
+    rgba(7, 7, 7, 0.12) 70%,
+    #141414 0.01%
+  );
+}
+
+.pluses {
+  position: absolute;
+}
+
+/* .wrapper {
+  background-color: #c1c2c5;
+} */
+.input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  /* background: transparent;
+  -webkit-backdrop-filter: blur(0.5rem); */
+  backdrop-filter: blur(0.5rem);
+  background-color: rgb(0 0 0 / 50%);
+}
+
+.iconpaper {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  background-image: linear-gradient(145deg, #201f22, #050505);
+  box-shadow: 0 6px 8px 1px rgba(0, 0, 0, 0.5);
+  background-image: radial-gradient(
+      circle farthest-side at 0 100%,
+      #00ccb1,
+      transparent
+    ),
+    radial-gradient(circle farthest-side at 100% 0, #7b61ff, transparent),
+    radial-gradient(circle farthest-side at 100% 100%, #ffc414, transparent),
+    radial-gradient(circle farthest-side at 0 0, #1ca0fb, #141316);
+
+  @mixin hover {
+    transform: scale(1.1);
+  }
+}
+
+.iconstroke {
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  background-image: radial-gradient(
+      circle farthest-side at 0 100%,
+      #00ccb1,
+      transparent
+    ),
+    radial-gradient(circle farthest-side at 100% 0, #7b61ff, transparent),
+    radial-gradient(circle farthest-side at 100% 100%, #ffc414, transparent),
+    radial-gradient(circle farthest-side at 0 0, #1ca0fb, #141316);
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.iconglow {
+  z-index: 1;
+  width: 90px;
+  height: 80px;
+  opacity: 0.5;
+  filter: blur(34px);
+  background-image: radial-gradient(
+      circle farthest-side at 0 100%,
+      #00ccb1,
+      transparent
+    ),
+    radial-gradient(circle farthest-side at 100% 0, #7b61ff, transparent),
+    radial-gradient(circle farthest-side at 100% 100%, #ffc414, transparent),
+    radial-gradient(circle farthest-side at 0 0, #1ca0fb, #141316);
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.iconimg {
+  z-index: 2;
+  width: auto;
+  height: auto;
+  width: 76px;
+  height: 76px;
+  background-image: linear-gradient(145deg, #201f22, #050505);
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  box-shadow: 0 6px 8px 1px rgba(0, 0, 0, 0.5);
+}

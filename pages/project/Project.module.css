@@ -1,0 +1,88 @@
+.title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: "Arial";
+  letter-spacing: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+.card {
+  margin-bottom: 20px;
+
+  border-radius: 15px;
+
+  color: #ffffff;
+
+  background: rgba(87, 0, 95, 0.2);
+
+  border: 1px solid rgba(1, 81, 134, 0.9);
+
+  padding: 16px;
+
+  box-shadow: 0 0 8px rgba(87, 0, 95, 0.9);
+
+  transition: all 0.3s ease;
+
+  backdrop-filter: blur(4px);
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🔥 Hover Effect */
+.card:hover {
+  background: rgba(87, 0, 95, 0.4);
+
+  box-shadow:
+    0 0 12px rgba(87, 0, 95, 0.7),
+    0 0 22px rgba(1, 81, 134, 0.8),
+    0 0 32px rgba(87, 0, 95, 1);
+
+  transform: translateY(-4px) scale(1.02);
+}
+
+
+.section {
+  height: 110px;
+  border-bottom: 1px solid rgba(87, 0, 95, 0.7);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .section {
+    height: 180px;
+  }
+}
+
+.like {
+  color: #ff4444;
+}
+
+.description {
+  max-width: 600px;
+  margin: auto;
+}
+
+.description::after {
+  content: "";
+  display: block;
+  background-color: primaryColor();
+  width: rem(45);
+  height: rem(2);
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 0.75rem; /* theme.fontSizes.xs */
+  font-weight: 700;
+}

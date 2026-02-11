@@ -1,0 +1,121 @@
+.focus {
+  &:focus {
+    outline: rem(2px) solid var(--mantine-color-white-filled);
+    outline-offset: rem(3px);
+  }
+}
+
+.dropdown {
+  border: 1px solid gray;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.options {
+  border-radius: 25px;
+  color: black;
+
+  @mixin hover {
+    background-color: #681ce84a;
+  }
+}
+
+/* helloasha s */
+
+.paper {
+  border-radius: 25px;
+  box-shadow: inset 0px -1px 2px rgb(123 94 202 / 60%),
+    inset 0px 0.6px 0px rgb(104 64 182 / 70%),
+    inset 0px 1.2px 0px rgb(134 106 189), inset -1.2px 0px 0px rgb(13 13 21),
+    inset 1.2px 0px 0px rgb(44 31 74);
+  background: radial-gradient(
+    113.04% 100% at 50% 0%,
+    #4f3a809c 0.01%,
+    rgb(93 31 172 / 12%) 45%,
+    #2c2a444f 10%
+  );
+}
+
+.wrapper {
+  display: flex;
+
+  border-radius: var(--mantine-radius-lg);
+  padding: rem(4px);
+  border: rem(1px) solid
+    light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-8));
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    flex-direction: column;
+  }
+}
+
+.form {
+  flex: 1;
+  padding: var(--mantine-spacing-xl);
+  padding-left: calc(var(--mantine-spacing-xl) * 2);
+  border-left: 0;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    padding: var(--mantine-spacing-md);
+    padding-left: var(--mantine-spacing-md);
+  }
+}
+
+.fields {
+  margin-top: rem(-12px);
+}
+
+.fieldInput {
+  flex: 1;
+
+  & + & {
+    margin-left: var(--mantine-spacing-md);
+
+    @media (max-width: $mantine-breakpoint-sm) {
+      margin-left: 0;
+      margin-top: var(--mantine-spacing-md);
+    }
+  }
+}
+
+.fieldsGroup {
+  display: flex;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    flex-direction: column;
+  }
+}
+
+.contacts {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  background: rgba(3, 0, 20, 0.08);
+  box-sizing: border-box;
+  position: relative;
+  border-radius: var(--mantine-radius-lg);
+  background-size: cover;
+  background-position: center;
+  border: rem(1px) solid transparent;
+  padding: var(--mantine-spacing-xl);
+  flex: 0 0 rem(280px);
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    margin-bottom: var(--mantine-spacing-sm);
+    padding-left: var(--mantine-spacing-md);
+  }
+}
+
+.title {
+  margin-bottom: calc(var(--mantine-spacing-xl) * 1.5);
+  font-family: Greycliff CF, var(--mantine-font-family);
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    margin-bottom: var(--mantine-spacing-xl);
+  }
+}
+
+.control {
+  @media (max-width: $mantine-breakpoint-sm) {
+    flex: 1;
+  }
+}
