@@ -20,7 +20,7 @@ function ProjectCard() {
     {
       image: "/image/sy_repairshop.png",
       title: "Helmet Theft Detection system",
-      link: "https://github.com/XsprayGoD/helmetui",
+      link: "https://github.com/gautham-devo/helmetui",
       type: "APP",
       disabled: false,
       description:
@@ -29,7 +29,7 @@ function ProjectCard() {
     {
       image: "/image/sy_pausemenu.png",
       title: "XSP_nextjs-mantaine-website",
-      link: "https://github.com/XsprayGoD/nextjs-mantine",
+      link: "https://github.com/Xgautham-devo/nextjs-mantine",
       type: "website",
       disabled: false,
       description:
@@ -38,7 +38,7 @@ function ProjectCard() {
     {
       image: "/image/sy_territories.jpg",
       title: "XSP_Zones",
-      link: "https://github.com/XsprayGoD/zone-system",
+      link: "https://github.com/gautham-devo/zone-system",
       type: "Fivem",
       disabled: true,
       description:
@@ -47,7 +47,7 @@ function ProjectCard() {
     {
       image: "/image/sy_carry.png",
       title: "XSP_RecallXRevive",
-      link: "https://github.com/XsprayGoD/revive-recall",
+      link: "https://github.com/gautham-devo/revive-recall",
       type: "Fivem",
       disabled: false,
       description:
@@ -56,7 +56,7 @@ function ProjectCard() {
     {
       image: "/image/sy_notify.png",
       title: "XSP_Airdrop",
-      link: "https://github.com/XsprayGoD/airdrop",
+      link: "https://github.com/gautham-devo/airdrop",
       type: "Fivem",
       disabled: false,
       description:
